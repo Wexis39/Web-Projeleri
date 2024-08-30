@@ -17,7 +17,7 @@ for item in general_div:
     try:
         name =  item.find("div",{"class":"_cDEzb_p13n-sc-css-line-clamp-3_g3dy1"}).text
         price = item.find("span",{"class":"_cDEzb_p13n-sc-price_3mJ9Z"}).text
-        with open('Laptos.txt','a',encoding='utf-8') as f:
+        with open('items.txt','a',encoding='utf-8') as f:
             f.write(f'{name}\n{price}\n')
     except:
         continue
